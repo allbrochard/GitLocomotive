@@ -10,12 +10,15 @@ public class Main {
 		System.out.println("Ca c'est un chat next gen !");
 
 		Calendar date = new GregorianCalendar();
+		Calendar date2;
 		System.out.println(date.getTime());
-		
+		date = new GregorianCalendar();
 		int fin = date.get(Calendar.SECOND) + 10;
-		//while (date.get(Calendar.SECOND)<fin){
-			System.out.println(date.get(Calendar.SECOND));
-		//}
+		while (date.get(Calendar.SECOND)<fin){
+			date = new GregorianCalendar();
+			date2 = new GregorianCalendar();
+			System.out.println(date2.get(Calendar.SECOND));
+		}
 		
 
 	}
